@@ -117,9 +117,9 @@
         <fieldset class="form-filter-group">
           <legend class="form-filter-title">Стоимость, ₽:</legend>
           <input class="form-fieldset-input" type="number" placeholder="Цена от" aria-label="введите минимальную стоимость"
-           value="0" step="100" min="100">
+           value="0" step="100">
           <input class="form-fieldset-input" type="number" placeholder="Цена до" aria-label="введите максимальную стоимость"
-           value="9000" step="100" min="0">
+           value="9000" step="100">
           <div class="cost-range">
             <button class="cost-range-button" type="button">
               <span class="visually-hidden">установите минимальную стоимость</span>
@@ -127,6 +127,7 @@
             <button class="cost-range-button" type="button">
               <span class="visually-hidden">установите максимальную стоимость</span>
             </button>
+            <span class="cost-range-line-active"></span>
             <span class="cost-range-line"></span>
           </div>
         </fieldset>
@@ -136,7 +137,7 @@
 
 
         <span class="search-results">Найдено гостиниц: 38</span>
-        <select class="select-control" aria-label="Сортировка">
+        <select type="selected" class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
           <option value="popular">Сначала популярное</option>
           <option value="expensive">Сначала дорогое</option>
@@ -159,9 +160,9 @@
             </a>
             <span class="product-card-name">Гостиница</span>
             <span class="product-card-price">От 4000 ₽</span>
-            <p class="product-card-link-favorites">
+            <p class="product-card-favorites">
               <a class="product-card-link" href="#">Подробнее</a>
-              <a class="product-card-button button" href="#">В избранное</a>
+              <button class="product-card-button button" type="button">В избранное</button>
             </p>
             <p class="product-card-link-rating">
               <ul class="product-card-link-rating-list">
@@ -308,20 +309,20 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="#">
-                <img class="vk-logo" src="#" alt="Логотип Вконтакте">
+              <a class="footer-social-link" href="https://vk.com/htmlacademy">
+                <img class="footer-social-link-logo" src="#" alt="Логотип Вконтакте">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
-                <img class="tg-logo" src="#" alt="Логотип Телеграмма">
+              <a class="footer-social-link" href="https://t.me/htmlacademy ">
+                <img class="footer-social-link-logo" src="#" alt="Логотип Телеграмма">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
-                <img class="you-tube-logo" src="#" alt="Логотип Ютуба">
+              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="footer-social-link-logo" src="#" alt="Логотип Ютуба">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
