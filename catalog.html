@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/catalog.css">
   </head>
   <body>
     <header class="page-header">
@@ -42,29 +44,30 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a href="catalog.html" aria-current="page">Хочу сюда</a>
+            <a class="navigation-button" href="catalog.html" aria-current="page">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-inner">
       <section class="hotel-selection">
-        <img class="main-background" src="images/catalog/filter.png" width="1200px" height="417px" alt="Поиск">
+        <div class="hotel-selection-container">
+        <img class="main-background" src="#" width="1200px" height="417px" alt="Поиск">
         <h1 class="primary-title">Гостиницы Седоны</h1>
         <nav class="hotel-selection-nav">
           <ul class="hotel-selection-nav-list">
             <li class="hotel-selection-nav-item">
-              <a class="navigation-link" href="main">
+              <a class="hotel-selection-nav-link" href="main">
                 <img class="navigation-logo" src="images/catalog/home.svg" width="12px" height="12px" alt="Иконка возврата на главную страницу">
               </a>
             </li>
             <li class="hotel-selection-nav-item">
-              <a class="navigation-link" href="next">
+              <a class="hotel-selection-nav-link" href="next">
                 <img class="navigation-logo" src="images/catalog/arrow.svg" width="7px" height="9px" alt="Иконка перехода на следующую страницу">
               </a>
             </li>
             <li class="hotel-selection-nav-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
+              <a class="hotel-selection-nav-link" href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -137,13 +140,14 @@
         <button class="form-filters-buttons" type="submit">Применить</button>
         <button class="form-filters-buttons" type="reset">Сбросить</button>
         </form>
+      </div>
 
 
         <span class="search-results">Найдено гостиниц: 38</span>
         <select type="selected" class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="popular">Сначала популярное</option>
-          <option value="expensive">Сначала дорогое</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
         </select>
         <a class="button" href="#">
           <img class="navigation-logo" src="images/catalog/row-list.svg" width="16px" height="14px" alt="Карточки">
@@ -185,7 +189,7 @@
                   <img src="images/catalog/star.svg" width="18px" height="17px" alt="star">
                 </li>
               </ul>
-              <a class="product-card-button button" href="#">Рейтинг:8,5</a>
+              <a class="product-card-button-rating" href="#">Рейтинг:8,5</a>
             </p>
           </li>
           <li class="product-card">
@@ -214,7 +218,7 @@
                   <img src="images/catalog/star.svg" width="18px" height="17px" alt="star">
                 </li>
               </ul>
-              <a class="product-card-button button" href="#">Рейтинг:9,2</a>
+              <a class="product-card-button-rating" href="#">Рейтинг:9,2</a>
             </p>
           </li>
           <li class="product-card">
@@ -240,7 +244,7 @@
                   <img src="images/catalog/star.svg" width="18px" height="17px" alt="star">
                 </li>
               </ul>
-              <a class="product-card-button button" href="#">Рейтинг:6,9</a>
+              <a class="product-card-button-rating" href="#">Рейтинг:6,9</a>
             </p>
           </li>
           <li class="product-card">
@@ -263,7 +267,7 @@
                   <img src="images/catalog/star.svg" width="18px" height="17px" alt="star">
                 </li>
               </ul>
-              <a class="product-card-button button" href="#">Рейтинг:5,0</a>
+              <a class="product-card-button-rating" href="#">Рейтинг:5,0</a>
             </p>
           </li>
         </ul>
@@ -302,10 +306,11 @@
     <footer class="page-footer">
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-descriptin">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-descriptin">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit" >
+          <button class="button-newsletter-button" type="submit" >
+            <span class="newsletter-follow-button">Подписаться</span>
             <span class="visually-hidden">Подписаться</span>
           </button>
         </form>
